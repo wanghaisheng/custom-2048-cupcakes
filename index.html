@@ -5,6 +5,73 @@
 <meta name="description" content="Play 2048 Cupcakes, the sweetest puzzle game! Combine delicious cupcakes in this addictive unblocked version. Try Christmas and Halloween editions of 2048 cupcakes game. Create your custom 2048 game with Taylor Swift, Minecraft themes and more!">
 <meta name="keywords" content="2048 cupcakes, unblocked 2048 games, 2048 taylor swift, 2048 minecraft, cupcake game, christmas cupcakes 2048, halloween cupcakes 2048">
 <style>
+  
+
+
+
+
+.game-remixes {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #fff5f8, #fff);
+}
+
+.remixes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.remix-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.remix-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.remix-card h4 {
+  margin: 15px 0;
+  font-size: 1.4rem;
+}
+
+.remix-card p {
+  margin-bottom: 20px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.remix-preview {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+  transition: all 0.3s ease;
+}
+
+.remix-card:hover .remix-preview {
+  transform: scale(1.05);
+}
+
+
+
   :root {
     --primary: #ff9cd1;
     --secondary: #ffd4e5;
@@ -766,6 +833,62 @@
     </div>
   </section>
 
+  <section class="game-remixes">
+    <h4 class="section-title">More Fun 2048 Remixes</h4>
+    <div class="remixes-grid">
+      <a href="/2048-minecraft" class="remix-card">
+        <h4>2048 Minecraft</h4>
+        <p>Combine blocks and items from Minecraft in this crafting-themed remix!</p>
+        <div class="remix-preview">
+          <svg width="200" height="200" viewBox="0 0 200 200">
+            <!-- Minecraft block icon -->
+            <rect x="50" y="50" width="100" height="100" fill="#8B6914"/>
+            <rect x="60" y="60" width="80" height="80" fill="#A87D1A"/>
+            <rect x="70" y="70" width="60" height="60" fill="#C69320"/>
+          </svg>
+        </div>
+      </a>
+  
+      <a href="/2048-taylor-swift" class="remix-card">
+        <h4>2048 Taylor Swift</h4>  
+        <p>Merge Taylor's album eras in this Swiftie version of 2048!</p>
+        <div class="remix-preview">
+          <svg width="200" height="200" viewBox="0 0 200 200">
+            <!-- Album icon -->
+            <circle cx="100" cy="100" r="80" fill="#FFB6C1"/>
+            <text x="100" y="100" text-anchor="middle" fill="#FFF" font-size="24">TS</text>
+          </svg>
+        </div>
+      </a>
+  
+      <a href="/2048-christmas" class="remix-card">
+        <h4>2048 Christmas Edition</h4>
+        <p>Combine festive treats and decorations in this holiday themed version!</p>  
+        <div class="remix-preview">
+          <svg width="200" height="200" viewBox="0 0 200 200">
+            <!-- Christmas tree icon -->
+            <polygon points="100,20 50,180 150,180" fill="#0F5"/>
+            <circle cx="100" cy="60" r="10" fill="red"/>
+            <circle cx="80" cy="100" r="10" fill="gold"/>
+            <circle cx="120" cy="140" r="10" fill="blue"/>
+          </svg>
+        </div>
+      </a>
+  
+      <a href="/2048-halloween" class="remix-card">
+        <h4>2048 Halloween Edition</h4>
+        <p>Match spooky treats and creatures in this haunted version!</p>
+        <div class="remix-preview">
+          <svg width="200" height="200" viewBox="0 0 200 200">
+            <!-- Pumpkin icon -->
+            <circle cx="100" cy="120" r="60" fill="#FFA500"/>
+            <path d="M90,80 L110,80 L100,60 Z" fill="#0F5"/>
+            <path d="M70,110 Q100,150 130,110" fill="none" stroke="#000" stroke-width="5"/>
+          </svg>
+        </div>
+      </a>
+    </div>
+  </section>
   <section class="features" id="features">
     <h2 class="section-title">Game Features</h2>
     <div class="features-grid">
